@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="search-container">
+        <input type="text" id="topic-input" placeholder="Enter a topic to debate...">
+        <button onclick="analyzeDebate()">Analyze</button>
+    </div>
+    
+    <div class="debate-container">
+        <div class="pros-container">
+            <h2>Pros</h2>
+            <div id="pros-content" class="content"></div>
+        </div>
+        
+        <div class="cons-container">
+            <h2>Cons</h2>
+            <div id="cons-content" class="content"></div>
+        </div>
+    </div>
+    
+    <div class="verdict-container">
+        <h2>Verdict</h2>
+        <div id="verdict-content"></div>
+    </div>
+</div>
+{% endblock %}
